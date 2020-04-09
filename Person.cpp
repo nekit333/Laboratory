@@ -1,8 +1,5 @@
 #include "Person.h"
 
-
-using namespace std;
-
 Person::Person(){
     setName("noName");
     setSurename("noSurename");
