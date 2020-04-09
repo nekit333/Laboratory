@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1586421196 source:d:\Проекты c++\1\main.cpp
+	"Person.h"
+
+1586421296 source:d:\Проекты c++\1\person.cpp
+	"Person.h"
+
+1586423000 d:\Проекты c++\1\person.h
+	<iostream>
+	<string>
+	<time.h>
+
+1583228083 d:\Проекты c++\1\person.cpp
+	"Person.h"
+
