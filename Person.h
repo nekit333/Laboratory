@@ -26,12 +26,12 @@ public:
     int getYear();
 
     Person operator=(const Person &p);
-    bool operator==(const Person &p);
-    bool operator>(const Person &p);
-    bool operator<(const Person &p);
-    bool operator>=(const Person &p);
-    bool operator<=(const Person &p);
-    bool operator!=(const Person &p);
+    bool const operator==(const Person &p);
+    bool const operator>(const Person &p);
+    bool const operator<(const Person &p);
+    bool const operator>=(const Person &p);
+    bool const operator<=(const Person &p);
+    bool const operator!=(const Person &p);
 
     friend ostream& operator<< (ostream &out, const Person &p);
     friend istream& operator>> (istream &in,Person &p);

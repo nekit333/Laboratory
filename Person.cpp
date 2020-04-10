@@ -63,26 +63,26 @@ Person Person::operator=(const Person &p){
     return *this;
 }
 
-bool Person::operator==(const Person &p){
+bool const Person::operator==(const Person &p){
     return this->year == p.year && this->name == p.name && this->surename == p.surename;
 }
 
-bool Person::operator>(const Person &p){
+bool const Person::operator>(const Person &p){
     return (this->year > p.year);
 }
 
-bool Person::operator<(const Person &p){
+bool const Person::operator<(const Person &p){
     return (this->year < p.year);
 }
 
-bool Person::operator>=(const Person &p){
+bool const Person::operator>=(const Person &p){
     return !(*this < p);
 }
-bool Person::operator<=(const Person &p){
+bool const Person::operator<=(const Person &p){
     return !(*this > p);
 }
 
-bool Person::operator!=(const Person &p){
+bool const Person::operator!=(const Person &p){
     return !(this->year == p.year && this->name == p.name && this->surename == p.surename);
 }
 
