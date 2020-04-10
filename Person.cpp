@@ -41,15 +41,15 @@ bool Person::setYear(int yearROM){
     return false;
 }
 
-void const Person::print(){
+void  Person::print() const{
     cout << name << " " << surename << " " << year <<"\n" << endl;
 }
 
-string const Person::getName(string name){
+string  Person::getName(string name) const{
     return name;
 }
 
-string const Person::getSurename(string surename){
+string  Person::getSurename(string surename) const{
     return surename;
 }
 
@@ -63,26 +63,26 @@ Person Person::operator=(const Person &p){
     return *this;
 }
 
-bool const Person::operator==(const Person &p){
+bool  Person::operator==(const Person &p) const{
     return this->year == p.year && this->name == p.name && this->surename == p.surename;
 }
 
-bool const Person::operator>(const Person &p){
+bool  Person::operator>(const Person &p) const{
     return (this->year > p.year);
 }
 
-bool const Person::operator<(const Person &p){
+bool  Person::operator<(const Person &p) const{
     return (this->year < p.year);
 }
 
-bool const Person::operator>=(const Person &p){
+bool  Person::operator>=(const Person &p) const{
     return !(*this < p);
 }
-bool const Person::operator<=(const Person &p){
+bool  Person::operator<=(const Person &p) const{
     return !(*this > p);
 }
 
-bool const Person::operator!=(const Person &p){
+bool  Person::operator!=(const Person &p) const{
     return !(this->year == p.year && this->name == p.name && this->surename == p.surename);
 }
 

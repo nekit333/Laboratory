@@ -21,17 +21,17 @@ public:
 
     void const print();
 
-    string const getName(string name);
-    string const getSurename(string surename);
+    string getName(string name) const;
+    string getSurename(string surename) const;
     int getYear();
 
     Person operator=(const Person &p);
-    bool const operator==(const Person &p);
-    bool const operator>(const Person &p);
-    bool const operator<(const Person &p);
-    bool const operator>=(const Person &p);
-    bool const operator<=(const Person &p);
-    bool const operator!=(const Person &p);
+    bool  operator==(const Person &p) const;
+    bool  operator>(const Person &p) const;
+    bool  operator<(const Person &p) const;
+    bool  operator>=(const Person &p) const;
+    bool  operator<=(const Person &p) const;
+    bool  operator!=(const Person &p) const;
 
     friend ostream& operator<< (ostream &out, const Person &p);
     friend istream& operator>> (istream &in,Person &p);
