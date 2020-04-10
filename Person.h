@@ -19,7 +19,7 @@ public:
     void setSurename (const string surename);
     bool setYear (int year);
 
-    void const print();
+    void print() const;
 
     string getName(string name) const;
     string getSurename(string surename) const;
